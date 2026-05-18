@@ -169,7 +169,7 @@ def main():
     ax.set_ylim(0, 1.05)
 
     # Compute AUC
-    auc = np.trapz(sorted(tprs), sorted(fprs))
+    auc = np.trapezoid(sorted(tprs), sorted(fprs))
     ax.text(0.6, 0.2, f"AUC ≈ {abs(auc):.3f}", fontsize=12,
             bbox=dict(boxstyle="round", facecolor="wheat", alpha=0.5))
 
