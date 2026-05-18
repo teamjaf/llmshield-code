@@ -8,6 +8,9 @@ build/
 .env
 *.log
 
+optimized-fig/
+
+
 # Large model files (should not be committed)
 *.bin
 *.safetensors
