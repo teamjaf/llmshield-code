@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(nvidia-smi)",
+      "Bash(python:*)",
+      "Bash(pip --version)",
+      "Bash(jupyter --version)",
+      "Bash(pip show:*)",
+      "Bash(pip install:*)",
+      "Bash(jupyter nbconvert:*)",
+      "Bash(ollama list *)",
+      "PowerShell(ollama list *)",
+      "PowerShell(python -c \"from huggingface_hub import scan_cache_dir; info = scan_cache_dir\\(\\); [print\\(r.repo_id, r.size_on_disk_str\\) for r in info.repos if 'qwen' in r.repo_id.lower\\(\\) or 'Qwen' in r.repo_id]\" 2>&1)",
+      "PowerShell(Get-ChildItem *)",
+      "PowerShell(Get-Process *)"
+    ]
+  }
+}
