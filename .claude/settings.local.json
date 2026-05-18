@@ -12,7 +12,8 @@
       "PowerShell(ollama list *)",
       "PowerShell(python -c \"from huggingface_hub import scan_cache_dir; info = scan_cache_dir\\(\\); [print\\(r.repo_id, r.size_on_disk_str\\) for r in info.repos if 'qwen' in r.repo_id.lower\\(\\) or 'Qwen' in r.repo_id]\" 2>&1)",
       "PowerShell(Get-ChildItem *)",
-      "PowerShell(Get-Process *)"
+      "PowerShell(Get-Process *)",
+      "PowerShell(Rename-Item *)"
     ]
   }
 }

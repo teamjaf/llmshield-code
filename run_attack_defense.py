@@ -20,6 +20,8 @@ import time
 import pandas as pd
 import numpy as np
 
+os.environ["TRANSFORMERS_VERBOSITY"] = "error"
+
 # Add parent dir to path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
